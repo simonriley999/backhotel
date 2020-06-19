@@ -1,12 +1,47 @@
 package com.hotel.pojo;
-import lombok.Data;
+
 import java.math.BigDecimal;
+import lombok.Data;
+
+
+/**
+ * <p>
+ * 商品信息
+ * </p>
+ *
+ * @author wangyu
+ * @since 2020-06-17
+ */
 @Data
-public class goods {
-    private Integer	id;
+
+public class Goods {
+
+    private static final long serialVersionUID = 1L;
+    private Integer id;
+    /**
+     * 商品名称
+     */
     private String name;
-    private Integer goods_type_id;
+
+    /**
+     * 商品类别id
+     */
+    private Integer goodsTypeId;
+
+    /**
+     * 单价
+     */
     private BigDecimal price;
+
+    /**
+     * 单位
+     */
     private String unit;
+
+    /**
+     * 备注
+     */
     private String note;
+
+
 }
