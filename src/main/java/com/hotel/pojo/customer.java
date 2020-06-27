@@ -18,6 +18,7 @@ import lombok.Data;
 public class Customer{
 
     private static final long serialVersionUID = 1L;
+
     private Integer id;
     /**
      * 会员名称

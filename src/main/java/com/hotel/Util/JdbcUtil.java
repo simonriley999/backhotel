@@ -67,7 +67,7 @@ public class JdbcUtil {
 
 
     public static <T> List<T> executeQuery(String sql,Class<T> clz,Object... params) {
-        List<T> list = new ArrayList<T>();
+        List<T> list = new ArrayList<>();
         Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -111,4 +111,6 @@ public class JdbcUtil {
         }
         return null;
     }
+
+
 }

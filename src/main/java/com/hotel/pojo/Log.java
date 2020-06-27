@@ -17,6 +17,7 @@ import lombok.Data;
 public class Log {
 
     private static final long serialVersionUID = 1L;
+
     private Integer id;
     /**
      * 用户id

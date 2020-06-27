@@ -18,6 +18,7 @@ import lombok.Data;
 public class RoomReserve {
 
     private static final long serialVersionUID = 1L;
+
     private Integer id;
     /**
      * 预定单号

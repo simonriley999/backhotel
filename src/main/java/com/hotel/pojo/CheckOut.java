@@ -17,7 +17,9 @@ import lombok.Data;
 public class Checkout {
 
     private static final long serialVersionUID = 1L;
+
     private Integer id;
+
     /**
      * 入住单号
      */

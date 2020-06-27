@@ -1,6 +1,8 @@
 package com.hotel.pojo;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * <p>
@@ -11,10 +13,12 @@ import lombok.Data;
  * @since 2020-06-17
  */
 @Data
-
+@AllArgsConstructor
+@NoArgsConstructor
 public class GoodsType {
 
     private static final long serialVersionUID = 1L;
+
     private Integer id;
     /**
      * 类别名称
