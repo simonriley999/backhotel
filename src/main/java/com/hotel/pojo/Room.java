@@ -1,22 +1,57 @@
 package com.hotel.pojo;
 
+import java.math.BigDecimal;
 import lombok.Data;
 
+/**
+ * <p>
+ * 房间信息
+ * </p>
+ *
+ * @author wangyu
+ * @since 2020-06-17
+ */
 @Data
-public class Room {
+
+public class Room  {
+
+    private static final long serialVersionUID = 1L;
+
     private Integer id;
-    //房号
-    private String room_number;
-    //状态 1入住 2空闲 3预定
+    /**
+     * 房号
+     */
+    private String roomNumber;
+
+    /**
+     * 1入住 2空闲 3预定
+     */
     private Integer state;
-    //标准价
-    private double standard_price;
-    //折后价
-    private double discount_price;
-    //普通会员价
-    private double ncustomer_price;
-    //VIP会员价
-    private double vcustomer_price;
-    //备注
+
+    /**
+     * 标准价
+     */
+    private BigDecimal standardPrice;
+
+    /**
+     * 折后价
+     */
+    private BigDecimal discountPrice;
+
+    /**
+     * 普通会员价
+     */
+    private BigDecimal ncustomerPrice;
+
+    /**
+     * VIP会员价
+     */
+    private BigDecimal vcustomerPrice;
+
+    /**
+     * 备注
+     */
     private String note;
+
+
 }
